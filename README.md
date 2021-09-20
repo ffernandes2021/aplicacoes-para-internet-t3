@@ -2,7 +2,7 @@
 
 Olá, aluno(a),
 
-Você foi contratado para desenvolver uma planta baixa baseada no layout abaixo.
+Você foi contratado para desenvolver uma planta baixa baseada no layout abaixo. Esta planta tem como referência um terreno de dimensão 5x25. Assim utilize pra manter a proporção a escala 1:5.
 
 ![layout!](aplicacoes-para-internet-t3/assets/img/readme.jpg)
 
