@@ -1,0 +1,478 @@
+/* Geral */
+
+body {
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 14px;
+    margin: 5px;
+}
+
+/* Estrutura */
+
+#terreno {    
+    height: 1000px; 
+}
+
+#terreno,
+#casa {
+    width: 200px;  
+}
+
+#terreno,
+#comodos,
+.legenda1-simbolo {
+    float: left;
+}
+
+#terreno {
+    margin: 20px;
+}
+
+#garagem {
+    border-top: dashed 5px #DAA220;
+}
+
+#garagem,
+#casa,
+#quarto1,
+#banheiro1,
+#sala,
+#cozinha,
+#banheiro2,
+#quarto2,
+#fundo {
+    position: relative;
+}
+
+#garagem,
+#fundo {       
+    border-left: dashed 5px #DAA220;
+    border-right: dashed 5px #808080;
+    height: 195px;
+    width: 190px;        
+}
+
+#garagem h1,
+#quarto1 h1,
+#banheiro1 h1,
+#sala h1,
+#cozinha h1,
+#banheiro2 h1,
+#quarto2 h1,
+#telhado,
+#fundo h1,
+#banheiro1 .parede-aux,
+#banheiro2 .parede-aux,
+#banheiro1 .acesso,
+#cozinha .acesso,
+#banheiro2 .acesso,
+.janela,
+.porta,
+#portao,
+#legendas,
+#legenda1 .simbolo,
+#legenda2 .simbolo {
+    position: absolute;
+}
+
+#casa {
+    height: 600px;        
+}
+
+#comodos {
+    width: 120px;    
+}
+
+#quarto1 {
+    border-top-width: 5px;  
+}
+
+#quarto1,
+#banheiro1,
+#sala,
+#cozinha,
+#banheiro2,
+#quarto2 {    
+    border-color: #D3D3D3;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-style: solid;    
+}
+
+#quarto1,
+#banheiro1, 
+#sala, 
+#cozinha, 
+#banheiro2 {
+    border-bottom-width: 2.5px;
+}
+
+#quarto1,
+#quarto2 {
+    height: 112.5px;
+}
+
+#banheiro1, 
+#sala, 
+#cozinha, 
+#banheiro2,
+#quarto2 {
+    border-top-width: 2.5px;
+}
+
+#banheiro1,
+#banheiro2 {
+    height: 55px;
+}
+
+#sala {
+    border-bottom-style: dashed;
+}
+
+#sala,
+#cozinha {
+    height: 115px;
+}
+
+#cozinha {
+    border-top-style: dashed;
+}
+
+#quarto2 {
+    border-bottom-width: 5px;
+}
+
+#telhado {
+    border-bottom: solid 5px #C16C45;
+    height: 590px;
+    left: 120px;
+    width: 80px;
+}
+
+#telhado,
+.telha {
+    border-top: solid 5px #C16C45;   
+}
+
+.telha {    
+    border-right: solid 5px #C16C45;
+    height: 18.8px;
+}
+
+.telha:first-child {
+    border-top-width: 0;
+}
+
+#fundo {    
+    border-bottom: dashed 5px #DAA220;
+}
+
+/* Paredes auxiliares */
+
+#banheiro1 .parede-aux,
+#banheiro2 .parede-aux {
+    border-left: solid 5px #D3D3D3;
+    height: 60px;
+    left: 26.833px;
+    top: -2.5px;
+}
+
+/* Acessos */
+
+#banheiro1 .acesso {
+    bottom: -5px; 
+}
+
+#banheiro1 .acesso,
+#cozinha .acesso,
+#banheiro2 .acesso {
+    border-bottom: solid 5px #FFF;
+    z-index: 1;    
+}
+
+#banheiro1 .acesso,
+#cozinha .acesso,
+#banheiro2 .acesso,
+#quarto1 .janela,
+#quarto2 .janela,
+#quarto1 .porta,
+#banheiro2 .porta,
+#quarto2 .porta,
+#portao {
+    width: 27px;
+}
+
+#cozinha .acesso,
+#banheiro2 .acesso,
+#quarto1 .janela,
+#quarto2 .porta,
+#portao {
+    top: -5px; 
+}
+
+/* Janelas */
+
+#quarto1 .janela {
+    border-top: solid 5px #0000FF;
+}
+
+#quarto1 .janela,
+#quarto2 .janela {    
+    left: 41.5px;
+}
+
+#banheiro1 .janela,
+#sala .janela,
+#cozinha .janela,
+#banheiro2 .janela {
+    border-right: solid 5px #0000FF;
+}
+
+#banheiro1 .janela,
+#sala .janela,
+#cozinha .janela,
+#banheiro2 .janela,
+#sala .porta {
+    right: -5px;
+}
+
+#banheiro1 .janela,
+#sala .janela,
+#cozinha .janela,
+#banheiro2 .janela,
+#banheiro1 .porta,
+#sala .porta {
+    height: 27px;
+}
+
+#banheiro1 .janela,
+#banheiro2 .janela {
+    top: 14px;
+}
+
+#sala .janela {
+    top: 30.5px;
+}
+
+#cozinha .janela {
+    top: 44px;
+}
+
+#quarto2 .janela {
+    border-bottom: solid 5px #0000FF;
+    bottom: -5px;
+}
+
+/* Portas */
+
+#quarto1 .porta,
+#banheiro2 .porta {
+    border-bottom: solid 5px #006400;
+    bottom: -5px;
+}
+
+#quarto1 .porta,
+#banheiro1 .porta,
+#banheiro2 .porta,
+#quarto2 .porta {
+    z-index: 1;
+}
+
+#banheiro1 .porta {
+    border-left: solid 5px #006400;
+    left: 27px;
+}
+
+#banheiro1 .porta,
+#sala .porta {
+    bottom: 0;
+}
+
+#sala .porta {
+    border-right: solid 5px #006400;
+}
+
+#banheiro2 .porta {
+    right: 0;
+}
+
+#quarto2 .porta {
+    border-top: solid 5px #006400;
+}
+
+/* Portão */
+
+#portao {
+    border-top: solid 5px #964B00;
+    left: 81.5px;
+}
+
+/* Área: largura */
+
+.area-largura {
+    top: 0;
+    transform: rotate(180deg);
+}
+
+#garagem .area-largura,
+#fundo .area-largura {
+    left: 79.885px;
+}
+
+#quarto1 .area-largura,
+#quarto2 .area-largura {
+    left: 39.885px;
+}
+
+#banheiro1 .area-largura,
+#sala .area-largura,
+#cozinha .area-largura,
+#banheiro2 .area-largura {
+    right: 19.373px;
+}
+
+/* Área: comprimento */
+
+.area-comprimento {
+    transform: rotate(90deg);
+}
+
+#garagem .area-comprimento,
+#fundo .area-comprimento {
+    top: 84.885px;
+}
+
+#quarto1 .area-comprimento,
+#sala .area-comprimento,
+#cozinha .area-comprimento,
+#quarto2 .area-comprimento {
+    top: 43.635px;
+}
+
+#banheiro1 .area-comprimento,
+#banheiro2 .area-comprimento {
+    right: 50px; /* trocar */
+}
+
+/* Área: nome */
+
+.area-nome {
+    transform: rotate(270deg);
+}
+
+#garagem .area-nome {
+    top: 84.555px;
+}
+
+#garagem .area-nome,
+#fundo .area-nome {
+    left: 84.5px;
+}
+
+#quarto1 .area-nome,
+#banheiro1 .area-nome,
+#sala .area-nome,
+#cozinha .area-nome,
+#banheiro2 .area-nome,
+#quarto2 .area-nome {
+    right: 0;
+}
+
+#quarto1 .area-nome,
+#quarto2 .area-nome {
+    top: 44.405px;
+}
+
+#banheiro1 .area-nome,
+#banheiro2 .area-nome {
+    top: 13.545px;
+}
+
+#sala .area-nome {
+    top: 44.83px;
+}
+
+#cozinha .area-nome {
+    top: 44.435px;
+}
+
+#fundo .area-nome {
+    top: 85.72px;
+}
+
+/* Legenda */
+
+#legendas {
+    left: 300px;
+    top: 20px;
+}
+
+.titulo {    
+    font-size: 22px;
+    margin: 0 20px 20px 30px;
+}
+
+.titulo,
+#legenda1 .simbolo {
+    font-weight: bold;
+}
+
+#legenda1,
+#legenda2 {
+    margin: 20px;
+}
+
+#legenda1 .elemento,
+#legenda2 .elemento {
+    margin: 15px;
+}
+
+#legenda1 .simbolo {
+    font-size: 18px;
+}
+
+#legenda1 .valor,
+#legenda2 .valor {
+    margin-left: 60px;
+}
+
+#legenda2 .simbolo {
+    height: 10px;
+    width: 15px;
+}
+
+.simbolo-portao {
+    border: solid 5px #964B00;
+}
+
+.simbolo-porta {
+    border: solid 5px #006400;
+}
+
+.simbolo-janela {
+    border: solid 5px #0000FF;
+}
+
+.simbolo-parede {
+    border: solid 5px #D3D3D3;
+}
+
+.simbolo-mini-parede {
+    border: dashed 5px #D3D3D3;
+}
+
+.simbolo-cerca-madeira {
+    border: dashed 5px #DAA220;
+}
+
+.simbolo-cerca-metal {
+    border: dashed 5px #808080;
+}
+
+.simbolo-telhado {
+    border: solid 5px #C16C45;
+}
