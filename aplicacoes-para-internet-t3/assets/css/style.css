@@ -356,7 +356,13 @@ h1 {
 #banheiro1 .area-comprimento,
 #banheiro2 .area-comprimento {
     left: 24px;
-    top: 14.545px;
+}
+
+#banheiro1 .area-comprimento,
+#banheiro2 .area-comprimento,
+#banheiro1 .area-nome,
+#banheiro2 .area-nome {
+    top: 13.545px;
 }
 
 /* Área: nome */
@@ -386,11 +392,6 @@ h1 {
 #quarto1 .area-nome,
 #quarto2 .area-nome {
     top: 44.405px;
-}
-
-#banheiro1 .area-nome,
-#banheiro2 .area-nome {
-    top: 13.545px;
 }
 
 #sala .area-nome {
