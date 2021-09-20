@@ -355,7 +355,8 @@ h1 {
 
 #banheiro1 .area-comprimento,
 #banheiro2 .area-comprimento {
-    right: 50px; /* trocar */
+    left: 24px;
+    top: 14.545px;
 }
 
 /* Área: nome */
